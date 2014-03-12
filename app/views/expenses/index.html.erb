@@ -1,0 +1,102 @@
+<!--Content-->
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3>Formulario 606</h3>
+      </div>
+    </div>
+	 </div>
+</section>
+
+					    <!--Content-->
+					    <section>
+					      <div class="container">
+					        <div class="row">
+					          <div class="span12 text-center">
+
+											<div class="span2 text-left">
+											</div>
+											
+											<div class="span2 text-left">
+											</div>
+											
+											<div class="span3 text-left">
+											</div>
+
+
+
+					          </div>
+					        </div>
+								 </div>
+					    </section>
+                  
+	                <!-- table sample -->
+	                <!-- the script for the toggle all checkboxes from header is located in js/theme.js -->
+ 
+                 <div class="table-products section">
+	                    <div class="row-fluid head">
+	                        <div class="span12">
+	                            <h4>Products</h4>
+	                        </div>
+	                    </div>
+
+
+	                    <div class="row-fluid">
+	                        <table class="table table-hover">
+	                            <thead>
+	                                <tr>
+                                   		<th class="span2">RNC o Cédula</th>
+	                                    <th class="span2">Tipo ID</th>
+	                                    <th class="span4">Cuentas</th>
+	                                    <th class="span2">NCF</th>
+	                                    <th class="span2">Documento Modificado</th>
+	                                    <th class="span1">Fecha Comprobante</th>
+	                                    <th class="span1">Fecha de pago</th>
+	                                    <th class="span2">ITBIS facturado</th>
+	                                    <th class="span2">ITBIS Retenido</th>
+	                                    <th class="span2">Monto Facturado</th>
+	                                    <th class="span2">ISR Retenido</th>
+	                                    <th class="span2"><span class="line"></span>Status</th>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                <!-- row -->
+																	<% @expenses.each do |expense| %>
+	                                <tr class="first">
+														        <td><%= expense.businessid %></td>
+														        <td><%= expense.typeid %></td>
+														        <td><%= expense.account_id %></td>
+														        <td><%= expense.ncf %></td>
+														        <td><%= expense.modified_document %></td>
+														        <td><%= expense.voucher_date %></td>
+														        <td><%= expense.payment_date %></td>
+														        <td><%= expense.billed_itbis %></td>
+														        <td><%= expense.retained_itbis %></td>
+														        <td><%= expense.amount_billed %></td>
+														        <td><%= expense.retained_isr %></td>
+	                                  <td><span class="label label-info"><%= expense.status %></span></td>
+	                                </tr>
+	                                <% end %>
+																  <!-- row -->
+	                            </tbody>
+	                        </table>
+	                    </div>
+
+    <div class="pagination">
+      <ul>
+        <li><a href="#">&#8249;</a></li>
+        <li><a class="active" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">&#8250;</a></li>
+      </ul>
+		</div>
+			
+    </div>
+</div>
+<div class="row">
+	
+</div>
+

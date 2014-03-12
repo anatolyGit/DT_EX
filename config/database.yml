@@ -1,0 +1,45 @@
+
+#development:
+#  adapter: postgresql
+#  database: data_ex_delta_development
+#  host: localhost
+
+#test:
+#    adapter: postgresql
+#    database: data_ex_delta_test
+#    host: localhost
+#
+
+#production:
+#    adapter: postgresql
+#    database: data_ex_delta_production
+#    host: localhost
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: data_ex_delta_development
+  host: 127.0.0.1
+  pool: 5
+  username: root
+  password: root
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: data_ex_delta_test
+  host: 127.0.0.1
+  pool: 5
+  username: root
+  password: root
+
+production: 
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: data_ex_delta_production
+  host: 127.0.0.1
+  pool: 5
+  username: root
+  password: root
